@@ -1,6 +1,6 @@
 require 'elephrame'
 
-TouchBot = Elephrame::Bots::TraceryBot.new('30s', 'words')
+TouchBot = Elephrame::Bots::TraceryBot.new('90m', 'words')
 
 TouchBot.on_reply do |bot|
   bot.reply_with_mentions('touch #adjective# get #noun#', rules: 'default')
